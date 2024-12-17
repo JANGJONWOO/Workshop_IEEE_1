@@ -124,9 +124,9 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 
 ## **Contact**  
 For any queries or feedback, please contact:  
-- **Name**: [Your Name]  
-- **Email**: [Your Email]  
-- **LinkedIn**: [Your LinkedIn Profile]  
+- **Name**: IEEE-VESIT  
+- **Email**: [IEEE_VESIT](ieee.vesit@ves.ac.in) 
+- **Instagram**:   [IEEE_VESIT](https://www.instagram.com/ieee_vesit/)
 
 ---
 
