@@ -1,45 +1,60 @@
-import 'package:book_app/models/product.dart';
+import 'dart:convert';
 import 'package:flutter/material.dart';
+// import 'package:http/http.dart' as http;
+import 'package:book_app/models/product.dart';
 
 class Shop extends ChangeNotifier {
+  // List of products fetched from the API
   final List<Product> _shop = [
     Product(
       name: "Product 1",
       price: 99.99,
-      desc: "This is an book",
+      desc: "description",
+      imagePath: 'assets/book_1.jpg',
     ),
     Product(
       name: "Product 2",
       price: 99.99,
-      desc: "This is an book",
+      desc: "description",
+      // imagePath: imagePath
+      imagePath: 'assets/book_2.jpeg',
     ),
     Product(
       name: "Product 3",
       price: 99.99,
-      desc: "This is an book",
+      desc: "description",
+      // imagePath: imagePath
+      imagePath: 'assets/book_3.jpeg',
+    ),
+    Product(
+      name: "Product 4",
+      price: 99.99,
+      desc: "description",
+      // imagePath: imagePath
+      imagePath: 'assets/book_4.jpeg',
     ),
   ];
-  // user cart
-  final List<Product> _usercart = [];
 
-  // shop list
+  // User's cart
+  final List<Product> _userCart = [];
 
+  // Fetch products from the API and populate the _shop list
+
+  // Get the list of products
   List<Product> get shop => _shop;
 
-  // cart
-  List<Product> get cart => _usercart;
+  // Get the user's cart
+  List<Product> get userCart => _userCart;
 
-  // add to cart
+  // Add item to cart
   void addItemToCart(Product product) {
-    _usercart.add(product);
+    _userCart.add(product);
     notifyListeners();
   }
 
-  // remove from cart
-  void removeFromCart(Product product) {
-    _usercart.remove(product);
+  // Delete item from cart
+  void removeItemFromCart(Product product) {
+    _userCart.remove(product);
     notifyListeners();
   }
-
-  void removeItemFromCart(Product product) {}
 }
