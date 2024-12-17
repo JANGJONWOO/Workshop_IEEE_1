@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"bookapp-ba11b","appId":"1:430312515701:android:941bf98ea2b0a8edb1303c","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"bookapp-ba11b","configurations":{"android":"1:430312515701:android:941bf98ea2b0a8edb1303c","web":"1:430312515701:web:8a7cf09b89861e96b1303c"}}}}}}
